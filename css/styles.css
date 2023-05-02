@@ -86,6 +86,9 @@ img {
   justify-content: center;
   align-items: center;
 }
+.padding-bottom {
+  padding-bottom: 5rem;
+}
 /* ------------------------------- */
 
 /* ----- HEADER -------------- */
@@ -205,48 +208,18 @@ img {
 }
 /* ------------------------------- */
 /*---------SLIDER------------------*/
-.container-slider {
-  width: min(100%, 30rem);
-  margin: 0 auto;
-  overflow: hidden;
-  position: relative;
-  padding: 5rem 0;
-}
-.slider {
-  display: flex;
-  width: 900%;
-  height: 8rem;
-}
-.slider__section {
-  width: 100%;
-}
-.slider__img {
-  display: block;
-  width: 80%;
-  height: 100%;
-  margin: auto;
-  object-fit: cover;
-}
-.slider__btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 3.2rem;
-  font-weight: 200;
-  font-family: monospace;
+.splide {
+  margin: 6rem 0;
   text-align: center;
-  cursor: pointer;
-  color: var(--gray);
+  width: 80%;
+  margin: 4rem auto;
+  padding: 0 6rem;
 }
-.slider__btn:hover {
+
+.img_box img {
+  width: 20rem;
 }
-.slider__btn--left {
-  left: 0;
-}
-.slider__btn--right {
-  right: 0;
-}
-/*--------main-content---------------*/
+/* ------------------------------- */
 .main-content {
   color: var(--gray);
 }
@@ -255,17 +228,37 @@ img {
   text-align: center;
 }
 .main-content__txt__p {
+  margin: auto;
   padding-bottom: 4rem;
-  text-align: justify;
+  text-align: center;
 }
 .main-content__gallery img {
   width: 100%;
-  height: 25rem;
+  height: 100%;
+}
+@media (min-width: 768px) {
+  .main-content__txt__p {
+    width: 80%;
+  }
+  .main-content__gallery {
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 16rem);
+    gap: 1rem;
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .main-content__txt__p {
+    text-align: justify;
+  }
 }
 /* ------------------------------- */
 /*--------content---------------*/
 .content {
-  margin-top: 7rem;
+  margin-top: 5rem;
   color: var(--gray);
 }
 .content__txt__heading {
@@ -287,6 +280,17 @@ img {
 .content__txt__btn:hover {
   color: var(--wh);
   background-color: var(--gray);
+}
+@media (min-width: 768px) {
+  .content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+  }
+  .content__img {
+    width: 40rem;
+  }
 }
 /*--------maps---------------*/
 .maps {

@@ -13,6 +13,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
     <title>Decorksa</title>
   </head>
   <body>
@@ -39,74 +43,51 @@
     </nav>
     <main>
       <section class="container">
-        <div class="container-slider">
-          <div class="slider" id="slider">
-            <div class="slider__section">
-              <img
-                src="./img/slider/1.png"
-                alt="imagenSlider"
-                class="slider__img"
-              />
-            </div>
-            <div class="slider__section">
-              <img
-                src="./img/slider/2.png"
-                alt="imagenSlider"
-                class="slider__img"
-              />
-            </div>
-            <div class="slider__section">
-              <img
-                src="./img/slider/3.png"
-                alt="imagenSlider"
-                class="slider__img"
-              />
-            </div>
-            <div class="slider__section">
-              <img
-                src="./img/slider/4.png"
-                alt="imagenSlider"
-                class="slider__img"
-              />
-            </div>
-            <div class="slider__section">
-              <img
-                src="./img/slider/5.png"
-                alt="imagenSlider"
-                class="slider__img"
-              />
-            </div>
-            <div class="slider__section">
-              <img
-                src="./img/slider/6.png"
-                alt="imagenSlider"
-                class="slider__img"
-              />
-            </div>
-            <div class="slider__section">
-              <img
-                src="./img/slider/7.png"
-                alt="imagenSlider"
-                class="slider__img"
-              />
-            </div>
-            <div class="slider__section">
-              <img
-                src="./img/slider/8.png"
-                alt="imagenSlider"
-                class="slider__img"
-              />
-            </div>
-            <div class="slider__section">
-              <img
-                src="./img/slider/9.png"
-                alt="imagenSlider"
-                class="slider__img"
-              />
-            </div>
+        <div class="splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="img_box">
+                  <img src="./img/slider/1.png" alt="imagen" />
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="img_box">
+                  <img src="./img/slider/2.png" alt="imagen" />
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="img_box">
+                  <img src="./img/slider/3.png" alt="imagen" />
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="img_box">
+                  <img src="./img/slider/4.png" alt="imagen" />
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="img_box">
+                  <img src="./img/slider/5.png" alt="imagen" />
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="img_box">
+                  <img src="./img/slider/6.png" alt="imagen" />
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="img_box">
+                  <img src="./img/slider/7.png" alt="imagen" />
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="img_box">
+                  <img src="./img/slider/8.png" alt="imagen" />
+                </div>
+              </li>
+            </ul>
           </div>
-          <div class="slider__btn slider__btn--right" id="btn-right">&#62</div>
-          <div class="slider__btn slider__btn--left" id="btn-left">&#60</div>
         </div>
       </section>
       <section class="container main-content">
@@ -126,14 +107,14 @@
           </p>
         </div>
         <div class="main-content__gallery">
-          <img src="./img/1.jpg" alt="imagenGaleria" />
-          <img src="./img/2.jpg" alt="imagenGaleria" />
-          <img src="./img/3.jpg" alt="imagenGaleria" />
-          <img src="./img/4.jpg" alt="imagenGaleria" />
-          <img src="./img/5.jpg" alt="imagenGaleria" />
-          <img src="./img/6.jpg" alt="imagenGaleria" />
-          <img src="./img/7.jpg" alt="imagenGaleria" />
-          <img src="./img/8.jpg" alt="imagenGaleria" />
+          <img src="./img/1.webp" alt="imagenGaleria" />
+          <img src="./img/2.webp" alt="imagenGaleria" />
+          <img src="./img/3.webp" alt="imagenGaleria" />
+          <img src="./img/4.webp" alt="imagenGaleria" />
+          <img src="./img/5.webp" alt="imagenGaleria" />
+          <img src="./img/6.webp" alt="imagenGaleria" />
+          <img src="./img/7.webp" alt="imagenGaleria" />
+          <img src="./img/8.webp" alt="imagenGaleria" />
         </div>
       </section>
       <section class="container content">
@@ -152,14 +133,21 @@
       </section>
       <section class="container maps">
         <div class="maps__txt">
-          <h4 class="maps__txt__heading">Visitanos en nuestras sucursales.</h4>
+          <h4 class="maps__txt__heading">Visita en nuestras sucursales.</h4>
           <h5 class="maps__txt__subheading">showroom cdmx</h5>
           <p class="maps__txt__p">
             División Del Norte No. 427 Col. Del Valle CDMX
           </p>
           <p class="maps__txt__tel">Tel. 76785770 / 76785771</p>
         </div>
-        <iframe class="maps__googleMaps" src="#" frameborder="0"></iframe>
+        <iframe
+          class="maps__googleMaps padding-bottom"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.4483973560546!2d-99.16930492506532!3d19.393022781877963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff0cdbf811ff%3A0xc9f3fd131ebead55!2sAv.%20Divisi%C3%B3n%20del%20Nte.%20427%2C%20Col%20del%20Valle%20Nte%2C%20Benito%20Ju%C3%A1rez%2C%2003103%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses!2smx!4v1683060975994!5m2!1ses!2smx"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
         <div class="maps__txt">
           <h5 class="maps__txt__subheading">showroom cdmx</h5>
           <p class="maps__txt__p">
@@ -167,7 +155,14 @@
           </p>
           <p class="maps__txt__tel">Tel. 5543674052</p>
         </div>
-        <iframe class="maps__googleMaps" src="#" frameborder="0"></iframe>
+        <iframe
+          class="maps__googleMaps"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.5938710819282!2d-99.16377952506546!3d19.38673028188293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff099156aa97%3A0xf2f464f0438248d3!2sAv.%20Divisi%C3%B3n%20del%20Nte.%20846-L-3%2C%20Del%20Valle%2C%20Benito%20Ju%C3%A1rez%2C%2003100%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses!2smx!4v1683061157325!5m2!1ses!2smx"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </section>
     </main>
     <section class="social-net">
@@ -198,6 +193,8 @@
       </h6>
     </footer>
     <script src="./js/menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide-extension-auto-scroll.min.js"></script>
     <script src="./js/slider.js"></script>
   </body>
 </html>
