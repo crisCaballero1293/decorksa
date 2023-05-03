@@ -1,0 +1,19 @@
+.main-header {
+  background-image: url(../img/nosotrosHead.jpg);
+  height: 65rem;
+}
+.info__heading {
+  padding: 6rem 0;
+}
+.info__txt {
+  text-align: justify;
+}
+.second {
+  text-align: right;
+}
+@media (min-width: 768px) {
+  .info__heading h3,
+  second {
+    font-size: 4.5rem;
+  }
+}

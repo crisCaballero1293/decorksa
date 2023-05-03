@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Anek+Gujarati:wght@100;400;500&family=Montserrat:wght@100;200;300;400&display=swap");
+
 /* ------------- CUSTOM-PROPERTYS ---------------------------- */
 :root {
   --hFont: "Anek Gujarati", sans-serif;
@@ -24,6 +25,7 @@ body {
   font-family: var(--txtFont);
   font-size: 1.6rem;
   line-height: 1.5;
+  color: var(--gray);
 }
 .container {
   width: min(90%, 120rem);
@@ -89,6 +91,7 @@ img {
 .padding-bottom {
   padding-bottom: 5rem;
 }
+
 /* ------------------------------- */
 
 /* ----- HEADER -------------- */
@@ -106,7 +109,7 @@ img {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(24, 60, 84, 0.4);
+  background: rgba(24, 60, 84, 0.65);
   top: 0;
 }
 .main-header__content {
@@ -135,6 +138,15 @@ img {
 .main-header__btn:hover {
   color: var(--gray);
   background-color: var(--wh);
+}
+@media (min-width: 778px) {
+  .main-header__content {
+    width: 100%;
+  }
+  .main-header__content h1 {
+    font-size: 6.3rem;
+    font-weight: 500;
+  }
 }
 /* ---------------------------------- */
 
@@ -235,8 +247,9 @@ img {
 .main-content__gallery img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
-@media (min-width: 768px) {
+@media (min-width: 600px) {
   .main-content__txt__p {
     width: 80%;
   }
@@ -284,12 +297,13 @@ img {
 @media (min-width: 768px) {
   .content {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     width: 70%;
+    gap: 3rem;
   }
   .content__img {
-    width: 40rem;
+    width: 40%;
   }
 }
 /*--------maps---------------*/

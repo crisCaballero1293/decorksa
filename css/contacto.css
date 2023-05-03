@@ -1,0 +1,57 @@
+@import url(../css/styles.css);
+
+.main-header {
+  background-image: url(../img/contacHead.jpg);
+  height: 65rem;
+}
+.title {
+  text-align: center;
+  padding: 4rem 0;
+}
+.form {
+  display: block;
+  margin: 0 auto;
+  width: min(100%, 32rem);
+}
+.form label {
+  display: block;
+  padding: 0.7rem 0 0.5rem 0;
+  font-family: var(--hFont);
+}
+.form input {
+  width: 100%;
+  height: 3rem;
+  border-radius: 0.5rem;
+  border: 0.5px solid rgba(128, 128, 128, 0.5);
+}
+.form input:focus {
+  border-color: var(--vblue);
+}
+textarea {
+  width: 100%;
+  max-width: 100%;
+  height: 15rem;
+  max-height: 15rem;
+  min-height: 15rem;
+  margin-bottom: 5rem;
+  border-radius: 0.5rem;
+  border: 0.5px solid rgba(128, 128, 128, 0.5);
+}
+@media (min-width: 768px) {
+  .title h3 {
+    font-size: 5rem;
+  }
+}
+.logo-contact-info {
+  text-align: center;
+}
+.logo-contact-info i {
+  margin-right: 1rem;
+}
+.logo-contact-info img {
+  width: 20rem;
+}
+.logo-contact-info p {
+  font-family: var(--hFont);
+  font-size: 1.3rem;
+}

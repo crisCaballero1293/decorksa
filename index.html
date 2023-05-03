@@ -5,7 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>decorksa-INICIO</title>
+
+    <!-- PRELOAD -->
+    <link rel="PRELOAD" href="css/styles.css" as="style" />
     <link rel="stylesheet" href="css/styles.css" />
+
+    <link
+      rel="PRELOAD"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      crossorigin="crossorigin"
+      as="font-awesome"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -13,12 +24,20 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <link
+      rel="PRELOAD"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+      crossorigin="crossorigin"
+      as="libs"
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
     />
-    <title>Decorksa</title>
-  </head>
+
+    <link rel="PRELOAD" href="img/imgHeader.jpg" as="image"/>
+
   <body>
     <header class="main-header">
       <div class="main-header__content">
@@ -32,10 +51,10 @@
     <nav class="main-nav">
       <img class="main-nav__logo" src="./img/logo.png" alt="logo" />
       <div class="main-nav__links" id="navLinks">
-        <a href="#" class="selected">INICIO</a>
-        <a href="#">NOSOTROS</a>
-        <a href="#">GALERIA</a>
-        <a href="#">CONTACTO</a>
+        <a href="/" class="selected">INICIO</a>
+        <a href="pages/nosotros.html">NOSOTROS</a>
+        <a href="pages/galeria.html">PRODUCTOS</a>
+        <a href="pages/contacto.html">CONTACTO</a>
       </div>
       <button class="main-nav__menuBtn" id="btnMenu">
         <i class="fa-solid fa-bars"></i>
@@ -107,14 +126,14 @@
           </p>
         </div>
         <div class="main-content__gallery">
-          <img src="./img/1.webp" alt="imagenGaleria" />
-          <img src="./img/2.webp" alt="imagenGaleria" />
-          <img src="./img/3.webp" alt="imagenGaleria" />
-          <img src="./img/4.webp" alt="imagenGaleria" />
-          <img src="./img/5.webp" alt="imagenGaleria" />
-          <img src="./img/6.webp" alt="imagenGaleria" />
-          <img src="./img/7.webp" alt="imagenGaleria" />
-          <img src="./img/8.webp" alt="imagenGaleria" />
+          <img loading="lazy" src="./img/1.webp" alt="imagenGaleria" />
+          <img loading="lazy" src="./img/2.webp" alt="imagenGaleria" />
+          <img loading="lazy" src="./img/3.webp" alt="imagenGaleria" />
+          <img loading="lazy" src="./img/4.webp" alt="imagenGaleria" />
+          <img loading="lazy" src="./img/5.webp" alt="imagenGaleria" />
+          <img loading="lazy" src="./img/6.webp" alt="imagenGaleria" />
+          <img loading="lazy" src="./img/7.webp" alt="imagenGaleria" />
+          <img loading="lazy" src="./img/8.webp" alt="imagenGaleria" />
         </div>
       </section>
       <section class="container content">
@@ -133,7 +152,7 @@
       </section>
       <section class="container maps">
         <div class="maps__txt">
-          <h4 class="maps__txt__heading">Visita en nuestras sucursales.</h4>
+          <h4 class="maps__txt__heading">Visita nuestras sucursales.</h4>
           <h5 class="maps__txt__subheading">showroom cdmx</h5>
           <p class="maps__txt__p">
             División Del Norte No. 427 Col. Del Valle CDMX
