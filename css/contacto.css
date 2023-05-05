@@ -44,7 +44,8 @@ textarea {
   color: var(--gray);
 }
 .policy-link b {
-  color: mediumorchid;
+  color: var(--vblue);
+  text-decoration: underline;
 }
 .btnForm {
   margin-bottom: 7rem;
