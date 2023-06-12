@@ -11,8 +11,11 @@
     <link rel="PRELOAD" href="../css/styles.css" as="style" />
     <link rel="stylesheet" href="../css/styles.css" />
 
-    <link rel="PRELOAD" href="../css/nosotros.css">
-    <link rel="stylesheet" href="../css/nosotros.css">
+    <link rel="PRELOAD" href="../build/css/gallery.css" as="style" />
+    <link rel="stylesheet" href="../build/css/gallery.css" />
+
+    <link rel="PRELOAD" href="../build/css/galleryProd.css" as="style" />
+    <link rel="stylesheet" href="../build/css/galleryProd.css" />
 
     <link
       rel="PRELOAD"
@@ -39,21 +42,21 @@
       href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
     />
 
-    <link rel="PRELOAD" href="../img/nosotrosHead.jpg" as="image"/>
-
+    <link rel="PRELOAD" href="../img/prod2.jpeg" as="image" />
+  </head>
   <body>
     <header class="main-header">
       <div class="main-header__content">
-        <p>Lo Que Nos Hace Unicos</p>
-        <h1>Sobre Nosotros</h1>
+        <p>Las Mejores Marcas a Tu Alcance</p>
+        <h1>Nuestros Productos</h1>
       </div>
     </header>
     <nav class="main-nav">
       <img class="main-nav__logo" src="../img/logo.png" alt="logo" />
       <div class="main-nav__links" id="navLinks">
         <a href="../index.html">INICIO</a>
-        <a href="./nosotros.html" class="selected">NOSOTROS</a>
-        <a href="./productos.html">PRODUCTOS</a>
+        <a href="./nosotros.html">NOSOTROS</a>
+        <a href="./productos.html" class="selected">PRODUCTOS</a>
         <a href="./contacto.html">CONTACTO</a>
       </div>
       <button class="main-nav__menuBtn" id="btnMenu">
@@ -61,33 +64,95 @@
       </button>
     </nav>
     <main>
-
-      <section class="container info">
-         <div class="info__heading">
-            <h3>¿Quienes Somos?</h3>
-         </div>
-         <div class="info__txt">
-            <p>
-               Somos una empresa con mas de 30 años de experiencia en la
-               comercialización de acabados arquitectónicos, entre los cuales
-               destacamos por nuestros productos de primera calidad en cerámicas
-               tradicionales, porcelanatos importados, muebles para baño sobre diseño, muros 3D, pisos laminados y persianas.
-               Pero principalmente nos especializamos en piedras naturales, mármol, cantera, piedrines, ónix y granito. <br>
-               Siendo fabricantes especializados en cubiertas de mármol, granito y cuarzo para baños como para cocinas.
-            </p>
-         </div>
-         <div class="info__heading second">
-            <h3>Nuestra Misión</h3>
-         </div>
-         <div class="info__txt">
-            <p>
-               Es hacer que nuestros clientes tengan una experiencia de satisfacción total, al ofrecer productos de la más alta calidad a precios competitivos. Aunado esto a nuestra misión, es que todos y cada uno de nuestros clientes queden totalmente satisfechos. <br>
-               Es por eso que nuestro objetivo es hacer de Decor Ksa una empresa de su plena confianza y estamos seguros que la forma de lograrlo es mediante la aplicación de valores, tales como el respeto, la cordialidad y sinceridad. <br>
-               por esta y muchas razones mas, decimos que ... en Decor Ksa<b> "Hacemos de tu casa, un hogar"</b>
-            </p>
-         </div>
+      <section class="container">
+        <div class="title title-left">
+          <h3>ceramicas</h3>
+          <!-- CANTERAS -->
+        </div>
+        <div class="grid-gallery">
+          <div iv class="grid-gallery__card">
+            <a href="#">
+              <img
+                loading="lazy"
+                src="/img/imgGaleria//muros/ceramicas/Durango Gris 22.5x60.jpg"
+                alt="imagen-galeria"
+              />
+            </a>
+            <h6 class="card-txt">Durango Gris 22.5x60</h6>
+          </div>
+          <div iv class="grid-gallery__card">
+            <a href="#">
+              <img
+                loading="lazy"
+                src="/img/imgGaleria//muros/ceramicas/Durango Multicolor 22.5x60.jpg"
+                alt="imagen-galeria"
+              />
+            </a>
+            <h6 class="card-txt">Durango Multicolor 22.5x60</h6>
+          </div>
+          <div iv class="grid-gallery__card">
+            <a href="#">
+              <img
+                loading="lazy"
+                src="/img/imgGaleria//muros/ceramicas/Iberia Beige 33x55.jpg"
+                alt="imagen-galeria"
+              />
+            </a>
+            <h6 class="card-txt">Iberia Beige 33x55</h6>
+          </div>
+          <div iv class="grid-gallery__card">
+            <a href="#">
+              <img
+                loading="lazy"
+                src="/img/imgGaleria//muros/ceramicas/Iberia Wenge 33x55.jpg"
+                alt="imagen-galeria"
+              />
+            </a>
+            <h6 class="card-txt">Iberia Wenge 33x55</h6>
+          </div>
+          <div iv class="grid-gallery__card">
+            <a href="#">
+              <img
+                loading="lazy"
+                src="/img/imgGaleria//muros/ceramicas/Ladrillo Ocre 33x55.jpg"
+                alt="imagen-galeria"
+              />
+            </a>
+            <h6 class="card-txt">Ladrillo Ocre 33x55</h6>
+          </div>
+          <div iv class="grid-gallery__card">
+            <a href="#">
+              <img
+                loading="lazy"
+                src="/img/imgGaleria//muros/ceramicas/Santander Beige 33x55.jpg"
+                alt="imagen-galeria"
+              />
+            </a>
+            <h6 class="card-txt">Santander Beige 33x55</h6>
+          </div>
+          <div iv class="grid-gallery__card">
+            <a href="#">
+              <img
+                loading="lazy"
+                src="/img/imgGaleria//muros/ceramicas/Santander Marron 33x55.jpg"
+                alt="imagen-galeria"
+              />
+            </a>
+            <h6 class="card-txt">Santander Marron 33x55</h6>
+          </div>
+          <div iv class="grid-gallery__card">
+            <a href="#">
+              <img
+                loading="lazy"
+                src="/img/imgGaleria//muros/ceramicas/Santander Mix 33x55.jpg"
+                alt="imagen-galeria"
+              />
+            </a>
+            <h6 class="card-txt">Santander Mix 33x55</h6>
+          </div>
+        </div>
       </section>
-      
+
       <section class="container maps">
         <div class="maps__txt">
           <h4 class="maps__txt__heading">Visita nuestras sucursales.</h4>
@@ -150,5 +215,6 @@
       </h6>
     </footer>
     <script src="../js/menu.js"></script>
+    <script src="../js/overlay.js"></script>
   </body>
 </html>

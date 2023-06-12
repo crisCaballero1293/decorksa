@@ -1,0 +1,29 @@
+@import "/css/styles.css";
+
+.main-header {
+  height: 50rem;
+  background-image: url(/img/prod2.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@media (min-width: 700px) {
+  .grid-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 900px) {
+  .grid-gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 3rem;
+    max-width: 100rem;
+    margin: 0 auto;
+  }
+}
