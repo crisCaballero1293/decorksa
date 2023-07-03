@@ -23,6 +23,7 @@
   height: 3rem;
   border-radius: 0.5rem;
   border: 0.5px solid rgba(128, 128, 128, 0.5);
+  padding-left: 0.5rem;
 }
 .form input:focus {
   border-color: var(--vblue);
@@ -36,6 +37,9 @@ textarea {
   margin-bottom: 3rem;
   border-radius: 0.5rem;
   border: 0.5px solid rgba(128, 128, 128, 0.5);
+  font-family: var(--txtFont);
+  padding-left: 0.5rem;
+  font-weight: 400;
 }
 .policy-link {
   display: inline-block;
